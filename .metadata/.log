@@ -1,0 +1,134 @@
+!SESSION 2013-08-23 11:26:38.438 -----------------------------------------------
+eclipse.buildId=3.4.2.201308081805
+java.version=1.6.0_51
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/traviswinks/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/traviswinks/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-08-23 11:27:12.109
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.aptana.projects 2 0 2013-08-23 11:28:58.745
+!MESSAGE Internal error: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1$1.run(AbstractNewProjectWizard.java:274)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1.run(AbstractNewProjectWizard.java:345)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.core.commands.ExecutionException: Error while executing the "New Ruby Project" operation
+	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation.execute(AbstractWorkspaceOperation.java:210)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.doBasicCreateProject(AbstractNewProjectWizard.java:634)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.createNewProject(AbstractNewProjectWizard.java:541)
+	at org.radrails.rails.internal.ui.NewRailsProjectWizard.createNewProject(NewRailsProjectWizard.java:116)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1$1.run(AbstractNewProjectWizard.java:270)
+	... 4 more
+Caused by: org.eclipse.core.runtime.CoreException: Invalid project description.
+	at org.eclipse.ui.ide.undo.WorkspaceUndoUtil.recreate(WorkspaceUndoUtil.java:755)
+	at org.eclipse.ui.ide.undo.AbstractResourcesOperation.recreate(AbstractResourcesOperation.java:141)
+	at org.eclipse.ui.ide.undo.AbstractCreateResourcesOperation.doExecute(AbstractCreateResourcesOperation.java:59)
+	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation$1.run(AbstractWorkspaceOperation.java:206)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation.execute(AbstractWorkspaceOperation.java:204)
+	... 8 more
+!SUBENTRY 1 com.aptana.projects 4 0 2013-08-23 11:28:58.746
+!MESSAGE 
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Error while executing the "New Ruby Project" operation
+	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation.execute(AbstractWorkspaceOperation.java:210)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.doBasicCreateProject(AbstractNewProjectWizard.java:634)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.createNewProject(AbstractNewProjectWizard.java:541)
+	at org.radrails.rails.internal.ui.NewRailsProjectWizard.createNewProject(NewRailsProjectWizard.java:116)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1$1.run(AbstractNewProjectWizard.java:270)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1.run(AbstractNewProjectWizard.java:345)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.core.runtime.CoreException: Invalid project description.
+	at org.eclipse.ui.ide.undo.WorkspaceUndoUtil.recreate(WorkspaceUndoUtil.java:755)
+	at org.eclipse.ui.ide.undo.AbstractResourcesOperation.recreate(AbstractResourcesOperation.java:141)
+	at org.eclipse.ui.ide.undo.AbstractCreateResourcesOperation.doExecute(AbstractCreateResourcesOperation.java:59)
+	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation$1.run(AbstractWorkspaceOperation.java:206)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation.execute(AbstractWorkspaceOperation.java:204)
+	... 8 more
+
+!ENTRY com.aptana.projects 2 0 2013-08-23 11:29:06.916
+!MESSAGE Internal error: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1$1.run(AbstractNewProjectWizard.java:274)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1.run(AbstractNewProjectWizard.java:345)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.core.runtime.CoreException: fatal: destination path '/Users/traviswinks/rubyonrails' already exists and is not an empty directory.
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.doCloneFromGit(AbstractNewProjectWizard.java:665)
+	at com.aptana.ruby.ui.wizards.NewRubyProjectWizard.cloneFromGit(NewRubyProjectWizard.java:145)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.createNewProject(AbstractNewProjectWizard.java:537)
+	at org.radrails.rails.internal.ui.NewRailsProjectWizard.createNewProject(NewRailsProjectWizard.java:116)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1$1.run(AbstractNewProjectWizard.java:270)
+	... 4 more
+!SUBENTRY 1 com.aptana.projects 4 0 2013-08-23 11:29:06.917
+!MESSAGE 
+!STACK 1
+org.eclipse.core.runtime.CoreException: fatal: destination path '/Users/traviswinks/rubyonrails' already exists and is not an empty directory.
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.doCloneFromGit(AbstractNewProjectWizard.java:665)
+	at com.aptana.ruby.ui.wizards.NewRubyProjectWizard.cloneFromGit(NewRubyProjectWizard.java:145)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.createNewProject(AbstractNewProjectWizard.java:537)
+	at org.radrails.rails.internal.ui.NewRailsProjectWizard.createNewProject(NewRailsProjectWizard.java:116)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1$1.run(AbstractNewProjectWizard.java:270)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1.run(AbstractNewProjectWizard.java:345)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 2 com.aptana.core 4 0 2013-08-23 11:29:06.917
+!MESSAGE fatal: destination path '/Users/traviswinks/rubyonrails' already exists and is not an empty directory.
+
+!ENTRY com.aptana.projects 2 0 2013-08-23 11:29:13.239
+!MESSAGE Internal error: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1$1.run(AbstractNewProjectWizard.java:274)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1.run(AbstractNewProjectWizard.java:345)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.core.commands.ExecutionException: Error while executing the "New Ruby Project" operation
+	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation.execute(AbstractWorkspaceOperation.java:210)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.doBasicCreateProject(AbstractNewProjectWizard.java:634)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.createNewProject(AbstractNewProjectWizard.java:541)
+	at org.radrails.rails.internal.ui.NewRailsProjectWizard.createNewProject(NewRailsProjectWizard.java:116)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1$1.run(AbstractNewProjectWizard.java:270)
+	... 4 more
+Caused by: org.eclipse.core.runtime.CoreException: Invalid project description.
+	at org.eclipse.ui.ide.undo.WorkspaceUndoUtil.recreate(WorkspaceUndoUtil.java:755)
+	at org.eclipse.ui.ide.undo.AbstractResourcesOperation.recreate(AbstractResourcesOperation.java:141)
+	at org.eclipse.ui.ide.undo.AbstractCreateResourcesOperation.doExecute(AbstractCreateResourcesOperation.java:59)
+	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation$1.run(AbstractWorkspaceOperation.java:206)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation.execute(AbstractWorkspaceOperation.java:204)
+	... 8 more
+!SUBENTRY 1 com.aptana.projects 4 0 2013-08-23 11:29:13.241
+!MESSAGE 
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Error while executing the "New Ruby Project" operation
+	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation.execute(AbstractWorkspaceOperation.java:210)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.doBasicCreateProject(AbstractNewProjectWizard.java:634)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.createNewProject(AbstractNewProjectWizard.java:541)
+	at org.radrails.rails.internal.ui.NewRailsProjectWizard.createNewProject(NewRailsProjectWizard.java:116)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1$1.run(AbstractNewProjectWizard.java:270)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1.run(AbstractNewProjectWizard.java:345)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.core.runtime.CoreException: Invalid project description.
+	at org.eclipse.ui.ide.undo.WorkspaceUndoUtil.recreate(WorkspaceUndoUtil.java:755)
+	at org.eclipse.ui.ide.undo.AbstractResourcesOperation.recreate(AbstractResourcesOperation.java:141)
+	at org.eclipse.ui.ide.undo.AbstractCreateResourcesOperation.doExecute(AbstractCreateResourcesOperation.java:59)
+	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation$1.run(AbstractWorkspaceOperation.java:206)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation.execute(AbstractWorkspaceOperation.java:204)
+	... 8 more
